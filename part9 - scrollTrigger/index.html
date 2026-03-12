@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scroll Trigger</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+        <script src="script.js" defer></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="text-white relative z-0 bg-zinc-800">
+        <div class="w-full h-[100vh] flex items-center justify-center flex-col" id="page">
+            <h1 class="text-5xl mb-10 font-bold">ScrollTrigger with GSAP</h1>
+            <h2 class="text-xl">Animation Start</h2>
+        </div>
+
+        <div class="cards h-[290vh] px-[6rem] space-y-10">
+            <div class="h-[90vh] card w-full sticky top-10 z-[0] pt-[3.6rem] pl-[4rem]">
+                <img src="./images/img1.jpg" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1] rounded-3xl">
+            </div>
+            <div class="h-[90vh] card w-full sticky top-10 z-[0] pt-[5rem] pl-[4rem]">
+                <img src="./images/img2.jpg" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1] rounded-3xl">
+            </div>
+            <div class="h-[90vh] card w-full sticky top-10 z-[0] pt-[3.6rem] pl-[4rem]">
+                <img src="./images/img3.jpg" alt="" class="absolute top-0 left-0 h-full object-cover z-[-1] rounded-3xl">
+            </div>
+        </div>
+
+        <div class="w-full h-[400vh] flex items-center justify-center" id="page">
+            <h2 class="text-5xl mb-10 font-bold">Animation End</h2>
+        </div>
+    </body>
+</html>
